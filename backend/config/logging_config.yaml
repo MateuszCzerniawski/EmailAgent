@@ -1,0 +1,22 @@
+# Logging configuration for email Email Agent
+# Loaded at startup by app/logger.py
+
+# Log file path — relative to backend/
+log_file: "logs/app.log"
+
+# Minimum level for console output (DEBUG shows all messages in color)
+console_level: "INFO"
+
+# Minimum level written to the log file
+file_level: "INFO"
+
+# Log record format (applied to both handlers)
+format: "%(asctime)s  %(levelname)-8s  %(name)s  %(message)s"
+
+# ANSI color per log level for the console handler
+colors:
+  DEBUG:    cyan
+  INFO:     green
+  WARNING:  yellow
+  ERROR:    red
+  CRITICAL: purple
